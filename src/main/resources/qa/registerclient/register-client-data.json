@@ -1,0 +1,25 @@
+{
+  "registerClient": [
+    {
+      "key": "register-client-data-complete",
+      "client": "",
+      "title": "",
+      "firstName": "pepito",
+      "lastName": "perez",
+      "email": "correo345@correo.com",
+      "password": "123456",
+      "birthDay": "4",
+      "birthMonth": "January",
+      "birthYears": "1990",
+      "firstNameAddress": "Calle 6a #32-87",
+      "lastNameAddress": "Calle 6a #32-88",
+      "company": "mueblesitos s.a",
+      "address": "calle perdida #85 - 90",
+      "city": "Colombia",
+      "state": "Puerto Rico",
+      "codePostal": "12839",
+      "country": "United States",
+      "mobilePhone": "12345678"
+    }
+  ]
+}
