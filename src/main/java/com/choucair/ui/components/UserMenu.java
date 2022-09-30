@@ -7,15 +7,24 @@ public class UserMenu {
 
     public static Target MENU =
             Target.the("menu")
-                    .located(By.xpath("//ul[@class='sf-menu clearfix menu-content sf-js-enabled sf-arrows']"));
+                    .located(By.xpath("//section/section/h1"));
 
-    public static Target EMAIL_CREATE =
-            Target.the("email create")
-                    .located(By.xpath("email_create"));
+    public static Target ORGANIZATION =
+            Target.the("organization")
+                    .located(By.xpath("//ul/li/a/span[contains(text(),'Organization')]"));
 
 
-    public static Target SING_IN =
-            Target.the("sing in")
-                    .located(By.xpath("//a[@class='login']"));
+    public static Target BUSINESS_UNITS =
+            Target.the("business units")
+                    .located(By.xpath("//ul/li/a/span[contains(text(),'Business Units')]"));
+
+    public static Target MEETING =
+            Target.the("meeting")
+                    .located(By.xpath("(//ul/li/a/span[contains(text(),'Meeting')])[1]"));
+
+    public static Target MEETINGS =
+            Target.the("meetings")
+                    .located(By.xpath("//ul/li/a/span[contains(text(),'Meetings')]"));
+
 
 }

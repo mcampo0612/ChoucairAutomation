@@ -1,3 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Login","Should user login successfully when he sends valid credentials","SUCCESS","2021-09-01T10:11:37.9857125-05:00[America/Bogota]","0.0","14.58"
-"Register clients","Should register client be created when submit the complete registration data","SUCCESS","2021-09-01T10:16:07.6976035-05:00[America/Bogota]","0.0","22.68"
+"Start sharp","Should meeting and organization be created when submit the complete registration data","SUCCESS","2022-09-30T15:24:15.1518178-05:00[America/Bogota]","0.0","59.13"

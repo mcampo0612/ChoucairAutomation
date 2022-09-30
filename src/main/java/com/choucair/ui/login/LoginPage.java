@@ -5,19 +5,15 @@ import org.openqa.selenium.By;
 
 public class LoginPage {
 
-    public static final Target SING_IN = Target
-            .the("btn sing in")
-            .located(By.xpath("//div[@class='header_user_info']"));
-
     public static final Target USERNAME = Target
             .the("username txt")
-            .located(By.id("email"));
+            .located(By.id("StartSharp_Membership_LoginPanel0_Username"));
 
     public static final Target PASSWORD = Target
             .the("password txt")
-            .located(By.id("passwd"));
+            .located(By.id("StartSharp_Membership_LoginPanel0_Password"));
 
     public static final Target BTN_SING_IN = Target
             .the("Click btn")
-            .located(By.id("SubmitLogin"));
+            .located(By.id("StartSharp_Membership_LoginPanel0_LoginButton"));
 }

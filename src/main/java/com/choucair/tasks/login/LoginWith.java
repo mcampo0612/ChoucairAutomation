@@ -30,7 +30,6 @@ public class LoginWith implements Task {
     public <T extends Actor> void performAs(T actor) {
 
         actor.attemptsTo(
-                Click.on(LoginPage.SING_IN),
                 Enter.theValue(username).into(LoginPage.USERNAME),
                 Enter.theValue(password).into(LoginPage.PASSWORD),
                 Click.on(LoginPage.BTN_SING_IN)

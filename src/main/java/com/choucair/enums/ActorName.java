@@ -2,8 +2,7 @@ package com.choucair.enums;
 
 public enum ActorName {
 
-    MIGUEL(2),
-    FRANCY(3);
+    MIGUEL(2);
 
     private final int id;
 

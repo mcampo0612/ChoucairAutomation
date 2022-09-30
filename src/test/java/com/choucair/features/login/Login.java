@@ -6,7 +6,6 @@ import com.choucair.models.actor.ChoucairActor;
 import com.choucair.tasks.login.LoginWith;
 import com.choucair.tasks.navigate.NavigateTo;
 import net.serenitybdd.junit.runners.SerenityRunner;
-import net.thucydides.core.annotations.Narrative;
 import net.thucydides.core.annotations.WithTag;
 import net.thucydides.core.annotations.WithTagValuesOf;
 import org.junit.Before;
@@ -38,17 +37,5 @@ public class Login extends BaseConf {
                 LoginWith.username(miguel.getCredentials().getUsername())
                         .andPassword(miguel.getCredentials().getPassword())
         );
-
     }
-
-    @Test
-    @WithTagValuesOf({"smoke"})
-    public void should_UserLoginNoSuccessfully_When_HeSendsValidBadCredentials() throws FileNotFoundException {
-        miguel = getActorById(ActorName.MIGUEL.id());
-        choucairActor.attemptsTo(
-                LoginWith.username("correo@correo.com")
-                        .andPassword("qwe")
-        );
-    }
-
 }

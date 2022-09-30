@@ -10,7 +10,7 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 public class NavigateTo {
 
     public static Performable loginPage() {
-        return Task.where("{0} opens the Login  page",
+        return Task.where("{0} opens the Login page",
                 Open.url(theActorInTheSpotlight().recall("baseUrl")));
     }
 

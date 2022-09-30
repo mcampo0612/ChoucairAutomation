@@ -1,6 +1,6 @@
 package com.choucair.data.factories;
 
-import com.choucair.exceptions.ActorNotFoundException;
+import com.choucair.exceptions.DataNotFoundException;
 import com.choucair.models.actor.ChoucairActor;
 import com.choucair.util.GetEnvironment;
 
@@ -25,7 +25,7 @@ public class ActorFactory {
                         .equals(name))
                 .findFirst()
                 .orElseThrow(() ->
-                        new ActorNotFoundException(String.format("user with name %s not found", name)));
+                        new DataNotFoundException(String.format("user with name %s not found", name)));
     }
 
     public static ChoucairActor getActorById(int id) throws FileNotFoundException {
@@ -33,7 +33,7 @@ public class ActorFactory {
                 .filter(a -> a.getId() == id)
                 .findFirst()
                 .orElseThrow(() ->
-                        new ActorNotFoundException(String.format("user with id %s not found", id)));
+                        new DataNotFoundException(String.format("user with id %s not found", id)));
     }
 
     private static URL getActorsFile() throws FileNotFoundException {
